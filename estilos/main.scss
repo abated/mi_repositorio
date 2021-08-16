@@ -1,0 +1,467 @@
+@import "./partials/variables";
+@import "./partials/fuentes";
+@import "./partials/mineria";
+@import "./partials/mixin";
+$thcolor:blanco;
+
+
+/* Header */
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: $background-encabezado;
+    align-items: center;
+    &__logoImagen {
+        width: 130px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 5px 0px 0px 10px;
+        transform: skew(10deg, 5deg);   
+}
+
+&__titulo {
+    color: darkgray;
+    margin: 10px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+}
+
+&__list {
+    display: flex;
+    list-style: none;
+    
+}
+&__item {
+    color: rgb(148, 181, 219);
+    text-decoration: none;
+    margin: 0em 1em 0em 1em;
+    font-size: 20px;
+    transition: all 1s;
+    & a {
+        color: rgb(148, 181, 219);
+        text-decoration: none;
+    }
+    & a:hover {
+        color: rgb(238, 239, 240);
+        text-decoration: none;
+    }
+      
+}
+
+
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*Main*/
+
+.principal {
+    display: grid;
+    &__fondo {
+        display: grid;
+        background-image: url(../Imagenes/fondo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        place-items: center;
+        width: 100%;
+    }
+    &__bienvenida {
+        font-size: $fontFondo;
+        color: #ffab0b;
+        background: #2804047a;
+        font-style: italic;
+    
+    }
+    &__bienvenida--chico{  
+        font-size: 20px;
+        color: #ffab0b;
+        background: #2804047a;
+        font-style: italic;
+    }
+
+
+}
+
+
+
+/*sectionServicios*/
+.servicioFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+        &__hijo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;   
+            margin-right: 10px;
+        }
+        &__titulo {
+            @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
+        }
+        &__titulo2 {
+            @include titulo(linear-gradient(to left, #8c797a, rgb(0, 0, 0)))
+        }
+        &__hijo--img {
+            height: 90%;
+        padding: 1rem;
+        } 
+        &__Parrafo {
+            font-size:20px;
+            color: blue;
+        }
+        &__Parrafo--links {
+            color: rgb(0, 3, 7);
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 1s;
+            & a {
+                color: rgb(0, 2, 3);
+                text-decoration: none;
+            }
+            & a:hover {
+                color: rgb(182, 78, 17);
+                text-decoration: none;
+            }
+}
+}
+ 
+.pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, blue, rgb(0, 0, 0));
+    font-size: 15px;
+    color: blanchedalmond;
+    &__logo {
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-color: rgb(26, 1, 1);
+        transform: rotateY(40deg);
+    }
+    &__redes {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        transition: all 2s;
+    &:hover{
+    width: 70px;
+    height: 70px;  
+    } 
+    }
+    }
+/*contacto*/
+ 
+    
+  
+    
+  
+    .contacto { 
+        width: 450px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: white;
+        &__titulo {
+            background-color:#10100d;
+            text-align: $centrar;
+            color: white;
+        }
+        &__input{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        &__textarea {
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        &__boton {
+            background: rgb(126, 11, 11);
+            color: white;
+            padding: 20px;
+            width: 49%;
+
+        }
+        &__boton:hover {
+            cursor: pointer;
+        }
+        
+    }
+
+.bodyContacto{
+    background-color: #181818;
+}
+
+
+/*noticias*/
+
+.containerNoticias {
+    display: grid;
+    grid-template-columns: 200px 2fr 200px;  
+}
+.noticias {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3; 
+    align-items: center;
+    justify-content: center;
+     &__imagen {
+        border-radius: 50%;
+        max-width: 100%;
+     }
+     &__titulo {
+        @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
+     }
+     &__titulo2 {
+        @include titulo(linear-gradient(to left, #8c797a, rgb(0, 0, 0)))
+     }
+}
+
+
+    
+    
+    
+
+
+
+
+
+
+/*rentabilidad */
+.rentabilidad {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;  
+    
+}
+.rentabilidad__parrafo {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1em;
+}
+.rentabilidad__titulo {
+    @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
+}
+
+.tablaGrids {
+    display: grid;
+    grid-template-columns: 100px 2fr 100px;
+}
+
+.placas {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3; 
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    &__titulo {
+        @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
+
+    }
+}
+
+
+td {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    font-family: 'Secular One', sans-serif;
+    
+}
+
+th {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid black;
+        background-color: blue;
+        @if ($thcolor==ninguno) {
+            color: grey;
+        
+        } @else if ($thcolor==rojo) {
+            color: red;
+        }@else if ($thcolor==blanco) {
+         color: white;
+        }
+         @else  {
+            color: black;
+        }
+    
+}
+.breadcrumbs {
+    padding: 10px;
+    font-family: sans-serif;
+}
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+    content: "/";
+    margin: 5px;
+    color: rgb(129, 117, 117);
+    
+}
+.breadcrumbs__link {
+    text-decoration: none;
+    color: #999999;
+
+}
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+}
+.breadcrumbs__link--active {
+    color: rgb(6, 176, 255);
+    font-weight: 500;
+}
+
+
+
+/* Billeteras */
+.walletPrincipal {
+    width: 100%;
+
+}
+.imagenWallet {
+    height: 30rem;
+    width: 20rem;
+    border-radius: 10%;
+    border: 1px solid black;
+   
+    
+}
+.container__billeteras__guia1 {
+    text-align: center;
+    border: 1px solid rgb(7, 0, 0);
+    padding: 1rem;
+   
+    
+    
+}
+.container__billeteras__titulo {
+    background-image: linear-gradient(to left, #ec0410, rgb(0, 0, 0));
+    color: white;
+    
+}
+.container__billeteras__parrafo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.container__billeteras {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    
+
+}
+
+@media only screen and (max-width: 1200px)  {
+    .servicioFlex {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    }
+
+@media only screen and (max-width: 768px)  {
+    .containerNoticias {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .encabezado__list {
+        display: flex;
+        flex-direction: column;
+
+      }
+      .imagenWallet {
+        height: 20rem;
+        width: 15rem;}
+      
+
+    }
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+ 
+  
+    .principal {
+        height: auto;
+        &__bienvenida {
+            font-size:$fontFondo/3;
+        }
+        &__bienvenida--chico{  
+            font-size: 15px;  
+        }
+    }
+.principal__bienvenida {
+    width: 50%;
+    padding-top:50px;
+    
+}
+.principal__bienvenida--chico {
+    width: 50%;
+    
+}
+
+form {
+    width:90%;
+}
+.tablaGrids {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contacto {
+    width: 350px;
+}
+
+
+.pie {
+    display: flex;
+    flex-direction: column;}
+.pie__titulo {
+   font-size: 15px;
+}
+.pie__logo {
+    width: 50px;
+height: 50px;
+}
+
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

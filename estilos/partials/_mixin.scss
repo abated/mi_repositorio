@@ -1,0 +1,6 @@
+@mixin titulo ($colortitulo){
+    color: white;
+    background-image: $colortitulo;
+    text-align: center;
+    margin-top: 5px;
+}
