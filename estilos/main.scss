@@ -309,32 +309,6 @@ th {
         }
     
 }
-.breadcrumbs {
-    padding: 10px;
-    font-family: sans-serif;
-}
-.breadcrumbs__item {
-    display: inline-block;
-}
-
-.breadcrumbs__item:not(:last-of-type)::after {
-    content: "/";
-    margin: 5px;
-    color: rgb(129, 117, 117);
-    
-}
-.breadcrumbs__link {
-    text-decoration: none;
-    color: #999999;
-
-}
-.breadcrumbs__link:hover {
-    text-decoration: underline;
-}
-.breadcrumbs__link--active {
-    color: rgb(6, 176, 255);
-    font-weight: 500;
-}
 
 
 
@@ -373,11 +347,8 @@ th {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    width: 100%;
-    
-
+    width: 100%;   
 }
-
 @media only screen and (max-width: 1200px)  {
     .servicioFlex {
         display: grid;
