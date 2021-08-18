@@ -350,10 +350,10 @@ th {
     width: 100%;   
 }
 
+/*overclock */
 .overclock{
     padding: 5px;
     
-
 }
 .overclock__imagen {
     margin: 5px;
@@ -365,7 +365,7 @@ th {
         display: grid;
         grid-template-columns: 1fr;
     }
-
+  
     }
 
 @media only screen and (max-width: 768px)  {
@@ -430,6 +430,10 @@ form {
 height: 50px;
 }
 
+}
+
+.imagen__section {
+    max-width: 100%;
 }
 
 
