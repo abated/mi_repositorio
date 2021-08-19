@@ -1,0 +1,59 @@
+.rentabilidad {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;  
+    
+}
+.rentabilidad__parrafo {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1em;
+}
+.rentabilidad__titulo {
+    @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
+}
+
+.tablaGrids {
+    display: grid;
+    grid-template-columns: 100px 2fr 100px;
+}
+
+.placas {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3; 
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    &__titulo {
+        @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
+
+    }
+}
+
+
+td {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    font-family: 'Secular One', sans-serif;
+    
+}
+
+th {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid black;
+        background-color: blue;
+        @if ($thcolor==ninguno) {
+            color: grey;
+        
+        } @else if ($thcolor==rojo) {
+            color: red;
+        }@else if ($thcolor==blanco) {
+         color: white;
+        }
+         @else  {
+            color: black;
+        }
+    
+}
