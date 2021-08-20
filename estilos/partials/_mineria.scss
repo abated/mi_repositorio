@@ -6,12 +6,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    &__titulo {
+        text-align: center;
+        background-color: #6a6aca;
+    }
     &__pasos {
         border: 1px solid grey;
     margin: 10px 0px 10px 0px;
     width: 100%;
     background-image: linear-gradient(to bottom, #f5eeee, #8888b5);
     font-family: 'Roboto Condensed', sans-serif;
+  
     &--fondo {
         background-image: linear-gradient(to bottom, #f5eeee, #434eac);
       }

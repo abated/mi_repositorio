@@ -4,7 +4,9 @@
 @import "./partials/contacto";
 @import "./partials/mixin";
 @import "./partials/rentabilidad";
-$thcolor:blanco;
+@import "./partials/noticias";
+@import "./partials/overclock";
+
 
 
 /* Header */
@@ -134,7 +136,6 @@ $thcolor:blanco;
             }
 }
 }
- 
 .pie {
     display: flex;
     flex-direction: row;
@@ -164,34 +165,6 @@ $thcolor:blanco;
     } 
     }
     }
-
-
-
-/*noticias*/
-
-.containerNoticias {
-    display: grid;
-    grid-template-columns: 200px 2fr 200px;  
-}
-.noticias {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2 / 3; 
-    align-items: center;
-    justify-content: center;
-     &__imagen {
-        border-radius: 50%;
-        max-width: 100%;
-     }
-     &__titulo {
-        @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
-     }
-     &__titulo2 {
-        @include titulo(linear-gradient(to left, #8c797a, rgb(0, 0, 0)))
-     }
-}
-
-
 
 
 
@@ -233,14 +206,7 @@ $thcolor:blanco;
     width: 100%;   
 }
 
-/*overclock */
-.overclock{
-    padding: 5px;
-    
-}
-.overclock__imagen {
-    margin: 5px;
-}
+
 
 
 @media only screen and (max-width: 1200px)  {

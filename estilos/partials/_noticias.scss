@@ -1,0 +1,21 @@
+.containerNoticias {
+    display: grid;
+    grid-template-columns: 200px 2fr 200px;  
+}
+.noticias {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3; 
+    align-items: center;
+    justify-content: center;
+     &__imagen {
+        border-radius: 50%;
+        max-width: 100%;
+     }
+     &__titulo {
+        @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
+     }
+     &__titulo2 {
+        @include titulo(linear-gradient(to left, #8c797a, rgb(0, 0, 0)))
+     }
+}
