@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprender sobre criptomonedas, tutoriales de como minar criptomonedas, placas de video, procesadores">
-    <meta name="keywords"  content="mineria,criptomonedas, Gpus, Cpus, Ethereum, bitcoin, monero ">
+    <meta name="description"
+        content="Aprender sobre criptomonedas, tutoriales de como minar criptomonedas, placas de video, procesadores">
+    <meta name="keywords" content="mineria,criptomonedas, Gpus, Cpus, Ethereum, bitcoin, monero ">
     <title>Mineria criptomonedas</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -89,26 +90,41 @@
 
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 2 - Descargue el software de minería</h3>
 
-                <p>Para GPU Nvidia recomendamos <a href="https://trex-miner.com/download/t-rex-0.21.4-win.zip">T-Rex</a>
-                    o <a
-                        href="https://onedrive.live.com/?authkey=%21AA%5FPubUSBVHCeTI&id=904F90F4251B2588%21111&cid=904F90F4251B2588">PhoenixMiner</a>
-                    Para las GPU de AMD, recomendamos <a
-                        href="https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.31/lolMiner_v1.31_Win64.zip">LolMiner</a>
+                <p> Vamos a utilizar para minar nuestras criptomonedas el software de phoenixminer. Lo vamos a descargar
+                    desde el siguiente <a href="https://phoenixminer.org/es/">link</a>
+                    O desde la pagina oficial <a href="https://phoenixminer.org/es/">https://phoenixminer.org/es/</a>
                 </p>
+                <div class="alert alert-danger" role="alert">
+                    NOTA: Hay algunos antivirus que interpretan el minero como un archivo no deseado o virus en ese caso
+                    deberiamos permitir los archivos
+                </div>
+
 
             </div>
 
             <div class="mineriaGuia__pasos">
 
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 3 - Edite el archivo bat</h3>
-                Usar YOUR_WALLET_ADDRESS que has creado en el Paso 1.
-                Ejemplo: 0x00192Fb10dF37c9FB223cd1BE8
-                Si tu quieres tu puedes Cambiar el RIG_ID en el archivo bat. Especifique el nombre del RIG tal como
-                desea
-                que se muestre en la página de estadísticas del minero. Este campo no es obligatorio. Podrías
-                dejarlo vacío.
-                Longitud de RIG_ID - Máximo 32 caracteres. Usa letras inglesas, números y símbolos "-" y "_".
-                Ejemplo: rig-1
+                <p>Para editar el archivo .bat vamos a utilizar 2 cosas </p>
+                <ol>
+                    <li>Pool de mineria</li>
+                    <li>La direccion de nuestra wallet creada en el paso 1 </li>
+                </ol>
+                <p>Veamos el paso a paso</p>
+                <ol>
+                    <li>Vamos a buscar el archivo "13_Ethereum-hiveon.bat" y hacemos click derecho en editar.</li>
+                    <li>Vamos a editar nuestra dirreccion de wallet creada en el paso 1 como lo indica la foto </li>
+
+                </ol>
+                <img src="./Imagenes/editar.png" alt="editar.bat" class="img-fluid">
+                <p>Es muy importante que ingreses tu wallet sino no vas a recibir los ingresos. Hay que tener en cuenta
+                    que el minero ya esta configurado para las pools de <a href="https://hiveon.net/">hiveon</a> Desde
+                    la pagina en si uno puede consultar rentabilidad dia a dia, minimo pago, comisiones etc... </p>
+                <p>Hacer doble click en 13_Ethereum-hiveon.bat y se te va a abrir una consola que deberia verse asi </p>
+                <img src="./Imagenes/consola.png" alt="consola" class="img-fluid">
+                <p>y listo ya estamos minando criptomonedas con nuestra placa de video</p>
+
+
             </div>
 
             <div class="mineriaGuia__pasos">
@@ -118,9 +134,33 @@
                 <p>Descargar <a href="https://www.msi.com/Landing/afterburner/graphics-cards">MsiAfterburner</a> para
                     optimizar notablemente el consumo y rendimiento de las placas de
                     video</p>
-            </div>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    IMPORTANTE
+                </button>
 
-        </div>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Underclocking y OverCloclking</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                El llamado overclocking básicamente es una técnica que nos ofrece la posibilidad
+                                para que nuestra computadora incremente su rendimiento un poco más allá de los
+                                valores originales de fábrica, pero debemos tener bastante cuidado, y ser muy
+                                precavidos con lo que nos proponemos hacer, ya que podemos dejar los componentes de
+                                nuestra PC completamente inservibles. Para eso te recomendamos visitar nuestra seccion
+                                <a href="./overclock.html">Overclock</a>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                            </div>
+
+                        </div>
     </section>
 
     <section class="mainMineria">
@@ -138,21 +178,34 @@
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 2 - Descargue el software de minería</h3>
 
                 <p>
-                    Para Cpus vamos a utilizar <a href="https://xmrig.com/">Xmrig</a>
+                    Vamos a utilizar para minar nuestras criptomonedas el software deXmrig. Lo vamos a descargar
+                    desde el siguiente <a href="https://xmrig.com/">link</a>
+
                 </p>
 
+
+                
             </div>
             <div class="mineriaGuia__pasos">
 
-                <h3 class="mineriaGuia__pasos--fondo"> Paso 3 - Edite el archivo bat</h3>
-                Usar YOUR_WALLET_ADDRESS que has creado en el Paso 1.
-                Ejemplo: 0x00192Fb10dF37c2CC623cd1BF599E8
-                Si tu quieres tu puedes Cambiar el RIG_ID en el archivo bat. Especifique el nombre del RIG tal como
-                desea
-                que se muestre en la página de estadísticas del minero. Este campo no es obligatorio. Podrías
-                dejarlo vacío.
-                Longitud de RIG_ID - Máximo 32 caracteres. Usa letras inglesas, números y símbolos "-" y "_".
-                Ejemplo: rig-1
+                <h3 class="mineriaGuia__pasos--fondo"> Paso 3 - Edite el archivo cmd</h3>
+                <p>Para editar el archivo .cmd vamos a utilizar 2 cosas </p>
+                <ol>
+                    <li>Pool de mineria</li>
+                    <li>La direccion de nuestra wallet creada en el paso 1 </li>
+                </ol>
+                <p>Veamos el paso a paso</p>
+                <ol>
+                    <li>Vamos a buscar el archivo "pool_mine_example" y hacemos click derecho en editar.</li>
+                    <li>Vamos a editar nuestra dirreccion de wallet creada en el paso 1 y la pool de mineria como lo indica la foto  </li>
+                    <img src="./Imagenes/editar2.png" alt="editar.cmd" class="img-fluid">
+
+                    <p>Es muy importante que ingreses tu wallet sino no vas a recibir los ingresos. Hay que tener en cuenta
+                        que el minero ya esta configurado para las pools de <a href="https://minexmr.com/">minexmr</a> Desde
+                        la pagina en si uno puede consultar rentabilidad dia a dia, minimo pago, comisiones etc... </p>
+                    <p>Hacer click izquierda en pool_mine_example.cmd y ejecutar como administrador, luego se te va a abrir una consola que deberia verse asi </p>
+                    <img src="./Imagenes/consola2.png" alt="consola" class="img-fluid">
+                    <p>y listo ya estamos minando criptomonedas con nuestro Procesador</p>
             </div>
 
 

@@ -6,6 +6,7 @@
 @import "./partials/rentabilidad";
 @import "./partials/noticias";
 @import "./partials/overclock";
+@import "./partials/billeteras";
 
 
 
@@ -165,46 +166,6 @@
     } 
     }
     }
-
-
-
-/* Billeteras */
-.walletPrincipal {
-    width: 100%;
-
-}
-.imagenWallet {
-    height: 30rem;
-    width: 20rem;
-    border-radius: 10%;
-    border: 1px solid black;
-   
-    
-}
-.container__billeteras__guia1 {
-    text-align: center;
-    border: 1px solid rgb(7, 0, 0);
-    padding: 1rem;
-   
-    
-    
-}
-.container__billeteras__titulo {
-    background-image: linear-gradient(to left, #ec0410, rgb(0, 0, 0));
-    color: white;
-    
-}
-.container__billeteras__parrafo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-
-.container__billeteras {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    width: 100%;   
-}
 
 
 
