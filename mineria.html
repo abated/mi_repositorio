@@ -13,6 +13,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/main.css">
 
 </head>
@@ -39,9 +42,7 @@
             </nav>
         </header>
     </div>
-
     <main>
-
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -71,13 +72,31 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
                 </div>
-
             </div>
     </main>
-
     <section class="mainMineria">
+        <h2 class="mineriaGuia__titulo">¿Qué significa minar criptomonedas?</h2>
+        <p class="mineriaGuia__parrafo">Explicándolo de forma sencilla, la minería de criptodivisas es un proceso
+            mediante el cual se buscar dar
+            resolución a problemas matemáticos complejos. Los mineros son una parte fundamental de todo sistema de
+            criptomonedas que opere dentro de una red Blockchain. Gracias al aporte de su tiempo y poder de computación
+            para resolver esos problemas matemáticos, proporcionan una llamada "prueba de trabajo" para la red,
+            verificando así las transacciones de Ether </p>
+        <p class="mineriaGuia__parrafo">Para cada bloque de transacciones, los mineros aplican su poder computacional
+            para resolver el rompecabezas
+            matemático.</p>
+        <p class="mineriaGuia__parrafo">Para ser más específicos, los mineros toman los metadatos de los encabezados
+            únicos de cada bloque, datos que
+            establecen una marca de tiempo y una versión de software, a través de una función hash, que genera una
+            cadena de longitud fija de números y letras aleatorios sensibles a mayúsculas y minúsculas. Esta cadena se
+            llama hash, y si el minero encuentra un hash que coincida con el objetivo actual, el bloque se considerará
+            minado y se transmitirá a toda la red para que otros nodos validen y añadan la transacción a su copia de la
+            cadena de bloques.</p>
+        <p class="mineriaGuia__parrafo">Antes de empezar, tendremos que elegir el hardware dedicado para configurar
+            nuestra computadora para la
+            minería a tiempo completo. Hay dos opciones: CPU (Unidad Central de Procesamiento), lo que significa usar el
+            procesador de nuestra computadora, y GPU (Unidad de Procesamiento Gráfico).</p>
         <h2 class="mineriaGuia__titulo">Como minar Ethereum con Gpus</h2>
         <div class="mineriaGuia">
             <div class="mineriaGuia__pasos">
@@ -85,12 +104,11 @@
                 <p> Podes crear una Wallet en <a href="https://bitso.com/">Bitso</a> o desde nuestra seccion <a
                         href="Billeteras.html">Billeteras virtuales</a> </p>
             </div>
-
             <div class="mineriaGuia__pasos">
-
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 2 - Descargue el software de minería</h3>
 
-                <p> Vamos a utilizar para minar nuestras criptomonedas el software de phoenixminer. Lo vamos a descargar
+                <p class="mineriaGuia__parrafo"> Vamos a utilizar para minar nuestras criptomonedas el software de
+                    phoenixminer. Lo vamos a descargar
                     desde el siguiente <a href="https://phoenixminer.org/es/">link</a>
                     O desde la pagina oficial <a href="https://phoenixminer.org/es/">https://phoenixminer.org/es/</a>
                 </p>
@@ -98,40 +116,41 @@
                     NOTA: Hay algunos antivirus que interpretan el minero como un archivo no deseado o virus en ese caso
                     deberiamos permitir los archivos
                 </div>
-
-
             </div>
-
             <div class="mineriaGuia__pasos">
 
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 3 - Edite el archivo bat</h3>
-                <p>Para editar el archivo .bat vamos a utilizar 2 cosas </p>
+                <p class="mineriaGuia__parrafo">Para editar el archivo .bat vamos a utilizar 2 cosas </p>
                 <ol>
-                    <li>Pool de mineria</li>
-                    <li>La direccion de nuestra wallet creada en el paso 1 </li>
+                    <li class="mineriaGuia__parrafo">Pool de mineria</li>
+                    <li class="mineriaGuia__parrafo">La direccion de nuestra wallet creada en el paso 1 </li>
                 </ol>
-                <p>Veamos el paso a paso</p>
+                <p class="mineriaGuia__parrafo">Veamos el paso a paso</p>
                 <ol>
-                    <li>Vamos a buscar el archivo "13_Ethereum-hiveon.bat" y hacemos click derecho en editar.</li>
-                    <li>Vamos a editar nuestra dirreccion de wallet creada en el paso 1 como lo indica la foto </li>
-
+                    <li class="mineriaGuia__parrafo">Vamos a buscar el archivo "13_Ethereum-hiveon.bat" y hacemos click
+                        derecho en editar.</li>
+                    <img src="./Imagenes/editar1.png" alt="editar1" class="img-fluid mineriaGuia__imagen">
+                    <li class="mineriaGuia__parrafo">Vamos a editar nuestra dirreccion de wallet creada en el paso 1
+                        como lo indica la foto. </li>
+                    <img src="./Imagenes/editar2.png" alt="editar2" class="img-fluid mineriaGuia__imagen">
+                    <li class="mineriaGuia__parrafo">Hacer doble click en 13_Ethereum-hiveon.bat y se te va a abrir una
+                        consola que deberia verse asi
+                    </li>
+                    <img src="./Imagenes/consola.png" alt="consola" class="img-fluid mineriaGuia__imagen">
                 </ol>
-                <img src="./Imagenes/editar.png" alt="editar.bat" class="img-fluid">
-                <p>Es muy importante que ingreses tu wallet sino no vas a recibir los ingresos. Hay que tener en cuenta
+                <p class="mineriaGuia__parrafo">Es muy importante que ingreses tu wallet sino no vas a recibir los
+                    ingresos. Hay que tener en cuenta
                     que el minero ya esta configurado para las pools de <a href="https://hiveon.net/">hiveon</a> Desde
                     la pagina en si uno puede consultar rentabilidad dia a dia, minimo pago, comisiones etc... </p>
-                <p>Hacer doble click en 13_Ethereum-hiveon.bat y se te va a abrir una consola que deberia verse asi </p>
-                <img src="./Imagenes/consola.png" alt="consola" class="img-fluid">
-                <p>y listo ya estamos minando criptomonedas con nuestra placa de video</p>
 
-
+                <p class="mineriaGuia__parrafo">y listo ya estamos minando criptomonedas con nuestra placa de video</p>
             </div>
-
             <div class="mineriaGuia__pasos">
 
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 4 (Opcional-Recomendable) - Underclocking y OverCloclking
                 </h3>
-                <p>Descargar <a href="https://www.msi.com/Landing/afterburner/graphics-cards">MsiAfterburner</a> para
+                <p class="mineriaGuia__parrafo">Descargar <a
+                        href="https://www.msi.com/Landing/afterburner/graphics-cards">MsiAfterburner</a> para
                     optimizar notablemente el consumo y rendimiento de las placas de
                     video</p>
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -168,7 +187,7 @@
         <div class="mineriaGuia">
             <div class="mineriaGuia__pasos">
                 <h3 class="mineriaGuia__pasos--fondo">Paso 1 - Crea una Wallet(Billetera virtual)</h3>
-                <p>
+                <p class="mineriaGuia__parrafo">
                     Podes crear una Wallet en <a href="https://www.coinomi.com/en//">Coinomi</a> o desde nuestra
                     seccion <a href="Billeteras.html">Billeteras virtuales</a> </p>
             </div>
@@ -177,35 +196,38 @@
 
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 2 - Descargue el software de minería</h3>
 
-                <p>
+                <p class="mineriaGuia__parrafo">
                     Vamos a utilizar para minar nuestras criptomonedas el software deXmrig. Lo vamos a descargar
                     desde el siguiente <a href="https://xmrig.com/">link</a>
-
                 </p>
-
-
-                
             </div>
             <div class="mineriaGuia__pasos">
-
                 <h3 class="mineriaGuia__pasos--fondo"> Paso 3 - Edite el archivo cmd</h3>
-                <p>Para editar el archivo .cmd vamos a utilizar 2 cosas </p>
+                <p class="mineriaGuia__parrafo">Para editar el archivo .cmd vamos a utilizar 2 cosas </p>
                 <ol>
-                    <li>Pool de mineria</li>
-                    <li>La direccion de nuestra wallet creada en el paso 1 </li>
+                    <li class="mineriaGuia__parrafo">Pool de mineria</li>
+                    <li class="mineriaGuia__parrafo">La direccion de nuestra wallet creada en el paso 1 </li>
                 </ol>
-                <p>Veamos el paso a paso</p>
+                <p class="mineriaGuia__parrafo">Veamos el paso a paso</p>
                 <ol>
-                    <li>Vamos a buscar el archivo "pool_mine_example" y hacemos click derecho en editar.</li>
-                    <li>Vamos a editar nuestra dirreccion de wallet creada en el paso 1 y la pool de mineria como lo indica la foto  </li>
-                    <img src="./Imagenes/editar2.png" alt="editar.cmd" class="img-fluid">
+                    <li class="mineriaGuia__parrafo">Vamos a buscar el archivo "pool_mine_example" y hacemos click
+                        derecho en editar.</li>
+                    <li class="mineriaGuia__parrafo">Vamos a editar nuestra dirreccion de wallet creada en el paso 1 y
+                        la pool de mineria como lo
+                        indica la foto </li>
+                    <img src="./Imagenes/editar3.png" alt="editar.cmd" class="img-fluid mineriaGuia__imagen">
 
-                    <p>Es muy importante que ingreses tu wallet sino no vas a recibir los ingresos. Hay que tener en cuenta
-                        que el minero ya esta configurado para las pools de <a href="https://minexmr.com/">minexmr</a> Desde
+                    <p class="mineriaGuia__parrafo">Es muy importante que ingreses tu wallet sino no vas a recibir los
+                        ingresos. Hay que tener en
+                        cuenta
+                        que el minero ya esta configurado para las pools de <a href="https://minexmr.com/">minexmr</a>
+                        Desde
                         la pagina en si uno puede consultar rentabilidad dia a dia, minimo pago, comisiones etc... </p>
-                    <p>Hacer click izquierda en pool_mine_example.cmd y ejecutar como administrador, luego se te va a abrir una consola que deberia verse asi </p>
+                    <p class="mineriaGuia__parrafo">Hacer click izquierda en pool_mine_example.cmd y ejecutar como
+                        administrador, luego se te va a
+                        abrir una consola que deberia verse asi </p>
                     <img src="./Imagenes/consola2.png" alt="consola" class="img-fluid">
-                    <p>y listo ya estamos minando criptomonedas con nuestro Procesador</p>
+                    <p class="mineriaGuia__parrafo">y listo ya estamos minando criptomonedas con nuestro Procesador</p>
             </div>
 
 

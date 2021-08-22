@@ -10,6 +10,13 @@
         text-align: center;
         background-color: #6a6aca;
     }
+    &__parrafo {
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 10px;
+    }
+    &__imagen {
+        border: solid rgb(82, 43, 43) 1px;
+    }
     &__pasos {
         border: 1px solid grey;
     margin: 10px 0px 10px 0px;

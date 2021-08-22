@@ -118,14 +118,19 @@
             height: 90%;
         padding: 1rem;
         } 
+        &__titulo3 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
         &__Parrafo {
             font-size:20px;
-            color: blue;
+            color: #9393f5;
+            font-family: 'Source Sans Pro', sans-serif;
         }
         &__Parrafo--links {
             color: rgb(0, 3, 7);
             text-decoration: none;
-            font-size: 20px;
+            font-size: 25px;
             transition: all 1s;
             & a {
                 color: rgb(0, 2, 3);
@@ -175,6 +180,7 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .servicioFlex__hijo--img {max-width: 70%;}
   
     }
 
@@ -191,7 +197,7 @@
       .imagenWallet {
         height: 20rem;
         width: 15rem;}
-      
+        .servicioFlex__hijo--img {max-width: 100%;}
 
     }
 
@@ -239,11 +245,13 @@ form {
     width: 50px;
 height: 50px;
 }
-
+th {
+    font-size: 14px;
+}
+td {
+    font-size: 17px;
 }
 
-.imagen__section {
-    max-width: 100%;
 }
 
 
