@@ -1,7 +1,17 @@
 .overclock{
-    padding: 5px;
-    
+    padding: 5px;  
 }
 .overclock__imagen {
     margin: 5px;
+    font-size: 2em;
 }
+/*Blucles*/
+@for $i from 1 through 3 {
+    .fontTitulo-#{$i} { font-size: 1em + $i; }
+  }
+/*Maps*/
+
+ 
+
+  
+

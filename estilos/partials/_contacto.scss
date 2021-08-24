@@ -3,7 +3,7 @@
 .contacto { 
     width: 450px;
     margin: auto;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.73);
     padding: 10px 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -43,5 +43,9 @@
 }
 
 .bodyContacto{
-background-color: #181818;
+background-image: url(/Imagenes/imagenContacto.jpg);
+padding: 10px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }

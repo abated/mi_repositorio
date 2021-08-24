@@ -147,16 +147,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to left, blue, rgb(0, 0, 0));
+    background-image: linear-gradient(to top, #4f4f9cc2, rgb(0, 0, 0));
     font-size: 15px;
     color: blanchedalmond;
     &__logo {
-        margin: 5px;
+        margin: 20px;
         width: 100px;
         height: 100px;
         border-radius: 50%;
         border-color: rgb(26, 1, 1);
-        transform: rotateY(40deg);
+        transform: rotateY(25deg);
     }
     &__redes {
         width: 50px;
@@ -165,12 +165,23 @@
         margin: 5px;
         border: none;
         transition: all 2s;
+        border-radius: 30%;
     &:hover{
     width: 70px;
     height: 70px;  
     } 
     }
     }
+    $redes: ( 
+        twitter: #55acee,
+        facebook:  #0978f7,
+        instagram: #d24570ab
+); 
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+ }
 
 
 

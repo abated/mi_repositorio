@@ -12,10 +12,14 @@
         border-radius: 50%;
         max-width: 100%;
      }
+     &__parrafo {
+      font-family: 'Source Sans Pro', sans-serif;
+     }
      &__titulo {
         @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
      }
      &__titulo2 {
-        @include titulo(linear-gradient(to left, #8c797a, rgb(0, 0, 0)))
+        @include titulo(linear-gradient(to left, #8c797a, rgb(0, 0, 0)));
+        font-size:40px;
      }
 }
