@@ -21,41 +21,56 @@
 </head>
 
 <body>
-    <div class="containerEncabezado">
-        <header class="encabezado">
-            <div>
-                <a href="./index.html"><img src="./Imagenes/imagenlogo2.jpg" alt="logo"
-                        class="encabezado__logoImagen"></a>
-            </div>
-            <h1 class="encabezado__titulo">InfoCoins</h1>
+    <header>
+        <nav class="fondoHeader navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid encabezado">
+                <a class="navbar-brand" href="./index.html"><img src="./Imagenes/imagenlogo2.jpg" class="encabezado__logoImagen" alt="logoImagen"></a>
+                <h1 class="encabezado__titulo">InfoCoins</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center encabezado__list">
+                        <li class="nav-item encabezado__item">
+                            <a class="active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./mineria.html">Mineria</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./billeteras.html">Billeteras</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./rentabilidad.html">Rentabilidad</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
 
-            <nav class="encabezado__nav">
-                <ul class="encabezado__list">
-                    <li class="encabezado__item"><a href="index.html">Inicio</a></li>
-                    <li class="encabezado__item"><a href="rentabilidad.html">Rentabilidad</a></li>
-                    <li class="encabezado__item"><a href="noticias.html">Noticias</a></li>
-                    <li class="encabezado__item"><a href="billeteras.html">Billeteras</a></li>
-                    <li class="encabezado__item"><a href="mineria.html">Mineria</a></li>
-                    <li class="encabezado__item"><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <h2 class="rentabilidad__titulo">Rentabilidad criptomonedas</h2>
     <section class="rentabilidad">
         <div>
-            <p>
+            <p class="rentabilidad__parrafo">
                 A la hora de minar criptomonedas no podemos únicamente decidirnos a hacerlo y empezar. Hay que tener en
                 cuenta una serie de factores. Por ejemplo, puede que tengas el equipo preparado y decidas hacerlo pero,
                 ¿merece la pena? Depende. No solo depende de tu ordenador sino que debes tener otros factores en cuenta:
             </p>
-            <ul class="rentabilidad__parrafo">
+            <ul class="rentabilidad__lista">
                 <li>El precio de la luz y el consumo energético de estar conectado 24 horas</li>
                 <li>La refrigeración que requieren los equipos y su correspondiente energía</li>
                 <li>La rentabilidad de la criptomoneda en ese momento</li>
                 <li>La criptomoneda que queremos minar, variará de una a otra</li>
             </ul>
-            <p>Te damos unos ejemplos de rentabilidad minando Ethereum con Gpus y Monero con Cpus </p>
+            <p class="rentabilidad__parrafo">Te damos unos ejemplos de rentabilidad minando Ethereum con Gpus y Monero con Cpus </p>
         </div>
     </section>
     <div class="tablaGrids">

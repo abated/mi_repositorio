@@ -2,12 +2,12 @@ $thcolor:blanco;
 .tablaGrids {
     display: grid;
     grid-template-columns: 100px 2fr 100px;
+    margin: 20px;
     &__placas {
         display: flex;
         flex-direction: column;
         grid-column: 2 / 3; 
         justify-content: center;
-        margin: 10px 0px 10px 0px;
         &--titulo {
             @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
         }
@@ -20,8 +20,13 @@ $thcolor:blanco;
     align-items: center;
     margin: 10px;  
     &__parrafo {
-        font-family: 'Secular One', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
     font-size: 1em;
+    margin: 2rem;
+    }
+    &__lista {
+        font-family: 'Secular One', sans-serif;
+        margin: 2rem;
     }
     &__titulo {
         @include titulo(linear-gradient(to left, #330eda, rgb(0, 0, 0)))
@@ -37,11 +42,11 @@ td {
     
 }
 
-th {
-        padding: 10px;
-        margin: 10px;
-        border: 2px solid black;
-        background-color: blue;
+th {  
+    padding:10px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: blue;
         @if ($thcolor==ninguno) {
             color: grey;
         

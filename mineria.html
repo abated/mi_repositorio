@@ -22,26 +22,41 @@
 
 <body>
 
-    <div class="containerEncabezado">
-        <header class="encabezado">
-            <div>
-                <a href="./index.html"><img src="./Imagenes/imagenlogo2.jpg" alt="logo"
-                        class="encabezado__logoImagen"></a>
-            </div>
-            <h1 class="encabezado__titulo">InfoCoins</h1>
+    <header>
+        <nav class="fondoHeader navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid encabezado">
+                <a class="navbar-brand" href="./index.html"><img src="./Imagenes/imagenlogo2.jpg" class="encabezado__logoImagen" alt="logoImagen"></a>
+                <h1 class="encabezado__titulo">InfoCoins</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center encabezado__list">
+                        <li class="nav-item encabezado__item">
+                            <a class="active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./mineria.html">Mineria</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./billeteras.html">Billeteras</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./rentabilidad.html">Rentabilidad</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item encabezado__item">
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
 
-            <nav class="encabezado__nav">
-                <ul class="encabezado__list">
-                    <li class="encabezado__item"><a href="index.html">Inicio</a></li>
-                    <li class="encabezado__item"><a href="rentabilidad.html">Rentabilidad</a></li>
-                    <li class="encabezado__item"><a href="noticias.html">Noticias</a></li>
-                    <li class="encabezado__item"><a href="billeteras.html">Billeteras</a></li>
-                    <li class="encabezado__item"><a href="mineria.html">Mineria</a></li>
-                    <li class="encabezado__item"><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="container">
             <div class="row">
