@@ -77,18 +77,20 @@
         place-items: center;
         width: 100%;
         
+        
     }
     &__bienvenida {
         font-size: $fontFondo;
         color: #ffab0b;
         background: #2804047a;
         font-style: italic;
-    }
+        margin: 2rem;}
     &__bienvenida--chico{  
         font-size: 20px;
         color: #ffab0b;
         background: #2804047a;
         font-style: italic;
+        margin: 2rem;  
     }
 
 
@@ -224,12 +226,12 @@
         }
     }
 .principal__bienvenida {
-    width: 50%;
+    width: auto;
     padding-top:50px;
     
 }
 .principal__bienvenida--chico {
-    width: 50%;
+    width:auto;
     
 }
 
